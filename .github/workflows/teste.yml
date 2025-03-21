@@ -20,3 +20,5 @@ jobs:
           username: githubpaymundico
           password: ${{ secrets.FTP_PASSWORD_SITE1 }}
           server-dir: public_html/teste/
+          exclude: |
+            teste12.php
