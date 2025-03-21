@@ -19,4 +19,4 @@ jobs:
           server: 177.52.182.62
           username: githubpaymundico
           password: ${{ secrets.FTP_PASSWORD_SITE1 }}
-          server-dir: public_html/teste
+          server-dir: public_html/teste/
