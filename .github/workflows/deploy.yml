@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      
+
 jobs:
   deploy:
     name: Deploy website every commit
@@ -14,8 +14,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Sync files
-        uses: public_html
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ftp.github.paymundi.com.br
           username: githubpaymundico
           password: ${{ secrets.FTP_PASSWORD_SITE1 }}
+          server-dir: public_html/
