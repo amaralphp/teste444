@@ -17,5 +17,5 @@ jobs:
         uses: /public_html
         with:
           server: 177.52.182.62
-          username: githubpaymundico@github.paymundi.com.br
+          username: githubpaymundico
           password: ${{ secrets.FTP_PASSWORD_SITE1 }}
